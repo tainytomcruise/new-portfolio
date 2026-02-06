@@ -1,201 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mayank Sahu — AI Full Stack Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+<title>Mayank Sahu | Web Developer</title>
 
-  <!-- GSAP -->
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="styles.css" />
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
 
-<!-- TOP CONTROLS -->
-<div class="top-controls">
-  <button id="themeToggle">◐</button>
-  <button class="menu-btn" id="menuBtn">☰</button>
+<!-- NAV -->
+<nav class="nav">
+<div class="nav-inner">
+<div class="logo">Mayank</div>
 </div>
-
-<!-- SIDE MENU -->
-<nav class="side-menu" id="sideMenu">
-  <div class="close-btn" id="closeMenu">✕</div>
-  <a data-target="#home">Home</a>
-  <a data-target="#focus">Focus</a>
-  <a data-target="#about">About</a>
-  <a data-target="#tech">Tech</a>
-  <a data-target="#process">Process</a>
-  <a data-target="#works">Work</a>
-  <a data-target="#contact">Contact</a>
 </nav>
 
+
 <!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-left">
-    <p class="section-label">// MAYANK SAHU</p>
-    <h1>
-      I build scalable<br />
-      AI-powered systems<br />
-      that solve real<br />
-      business problems.
-    </h1>
-    <p class="hero-desc">
-      Full Stack & AI Engineer focused on backend systems,
-      automation, real-time analytics, and production-ready software.
-    </p>
-  </div>
+<section class="hero container">
 
-  <div class="hero-right">
-    <img src="images/profile.JPG" alt="Mayank Sahu" />
-  </div>
+<div class="hero-left">
+
+<div class="badge">
+Web Developer | AI/ML Engineer
+</div>
+
+<h1 class="hero-title">
+I build production-grade AI systems that solve real business problems.
+</h1>
+
+<p class="hero-sub">
+Specializing in LLM-powered platforms, real-time voice applications,
+and scalable full-stack architecture.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="primary-btn">
+View My Work
+</a>
+
+<a href="https://github.com/tainytomcruise" target="_blank" class="secondary-btn">
+GitHub →
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+<img src="images/profile.JPG" alt="Mayank Sahu">
+</div>
+
 </section>
 
-<!-- HERO CONTINUATION -->
-<section class="light" id="focus">
-  <p class="large-text">
-    Currently focused on building AI-powered backend systems,
-    real-time analytics platforms, and automation pipelines that
-    solve real operational problems at scale.
-  </p>
+
+
+<!-- HIGHLIGHTS -->
+<section class="container">
+
+<h2>Engineering Highlights</h2>
+
+<div class="highlight-grid">
+
+<div class="highlight-card">
+<h3>Production Systems</h3>
+<p>Built and deployed real-world AI platforms with scalable infrastructure.</p>
+</div>
+
+<div class="highlight-card">
+<h3>AI Specialization</h3>
+<p>Integrated large language models into intelligent workflows.</p>
+</div>
+
+<div class="highlight-card">
+<h3>Full Stack Architecture</h3>
+<p>Designed secure APIs, backend services, and cloud deployments.</p>
+</div>
+
+<div class="highlight-card">
+<h3>Performance Driven</h3>
+<p>Focused on responsiveness, reliability, and maintainable systems.</p>
+</div>
+
+</div>
+
 </section>
 
-<!-- SCROLLING TECH TEXT -->
-<section class="scroll-row">
-  <div class="scroll-track">
-    <span>Architecture</span>
-    <span>Backend Systems</span>
-    <span>AI Pipelines</span>
-    <span>Automation</span>
-    <span>Cloud Deployment</span>
-  </div>
-</section>
+
 
 <!-- ABOUT -->
-<section class="dark" id="about">
-  <p class="section-label">// ABOUT</p>
-  <h2>Background</h2>
+<section class="container about">
 
-  <p class="long-text">
-    I’m a Full Stack & AI-focused developer currently pursuing my
-    Master of Computer Applications at Banaras Hindu University.
-    My work revolves around designing backend-heavy systems —
-    APIs, databases, AI pipelines, and real-time analytics —
-    with a strong emphasis on scalability, reliability, and clarity.
-  </p>
+<h2>About</h2>
 
-  <p class="long-text">
-    I’ve built production-grade systems ranging from AI voice agents
-    and mock interview platforms to enterprise HR management software,
-    working across Node.js, .NET Core, Python Flask, and modern frontend
-    frameworks. I enjoy solving system-level problems where architecture,
-    performance, and automation matter more than surface-level features.
-  </p>
+<p>
+AI-focused Full Stack Engineer experienced in designing scalable platforms,
+shipping production-grade applications, and building intelligent automation systems.
+My work centers around high-impact engineering — not just prototypes.
+</p>
+
 </section>
 
-<!-- TECH -->
-<section class="light" id="tech">
-  <p class="section-label">// TECH</p>
-  <h2 class="section-heading">Expertise</h2>
 
-  <div class="tech-grid">
-    <div>
-      <h3>Backend & Systems</h3>
-      <p>Node.js, Express, .NET Core, Python (Flask), REST APIs, SQL Server, MongoDB</p>
-    </div>
 
-    <div>
-      <h3>AI & Data</h3>
-      <p>LLMs, Prompt Engineering, Speech-to-Text, Sentiment Analysis</p>
-    </div>
+<!-- SKILLS -->
+<section class="container">
 
-    <div>
-      <h3>Frontend</h3>
-      <p>React, Next.js, Angular, Tailwind CSS</p>
-    </div>
+<h2>Core Expertise</h2>
 
-    <div>
-      <h3>Cloud & Automation</h3>
-      <p>Docker, Firebase, GitHub, n8n, Zapier</p>
-    </div>
-  </div>
+<div class="skills">
+
+<span>AI Systems</span>
+<span>LLM Integration</span>
+<span>System Design</span>
+<span>Full Stack Development</span>
+<span>REST APIs</span>
+<span>Cloud Deployment</span>
+<span>PostgreSQL</span>
+<span>MongoDB</span>
+
+</div>
+
 </section>
 
-<!-- PROCESS -->
-<section class="dark" id="process">
-  <p class="section-label">// PROCESS</p>
-  <h2 class="section-heading">How I work</h2>
 
-  <ol class="process">
-    <li>Understand the business problem and constraints</li>
-    <li>Design scalable system architecture</li>
-    <li>Build and iterate with real data</li>
-    <li>Automate workflows and deploy to production</li>
-    <li>Monitor, optimize, and refine</li>
-  </ol>
+
+<!-- PROJECTS -->
+<section id="projects" class="container">
+
+<h2>Selected Work</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>TalentGenie – AI HR Platform</h3>
+<p>
+Production-grade AI HR platform automating recruitment and workforce workflows.
+</p>
+<a href="https://talentgenie-d6e16momp-mayank-sahus-projects-40c29341.vercel.app/login" target="_blank">
+View Live Project →
+</a>
+</div>
+
+
+<div class="card">
+<h3>AI Mock Interview Platform</h3>
+<p>
+Real-time AI voice interview system enabling natural conversations and structured feedback.
+</p>
+<a href="https://ai-voice-agent-blush.vercel.app" target="_blank">
+View Live Project →
+</a>
+</div>
+
+
+<div class="card">
+<h3>Quotation Management System</h3>
+<p>
+Cloud-based quotation workflow platform with secure APIs and scalable deployment.
+</p>
+<a href="https://quotation-management-system-theta.vercel.app/login" target="_blank">
+View Live Project →
+</a>
+</div>
+
+</div>
+
 </section>
 
-<!-- WORK -->
-<section class="light" id="works">
-  <p class="section-label">// SELECTED WORK</p>
 
-  <div class="projects">
-    <div class="project left">
-      <h3>AI Mock Interview Platform</h3>
-      <p>
-        A real-time AI-powered interview system using voice interaction,
-        low-latency transcription, AI-driven question generation,
-        and automated performance evaluation.
-      </p>
-    </div>
-
-    <div class="project right">
-      <h3>RupeeQ — AI Calling Assistant</h3>
-      <p>
-        AI-powered calling agent with real-time analytics,
-        sentiment analysis, and live performance dashboards.
-      </p>
-    </div>
-
-    <div class="project left">
-      <h3>Enterprise HRMS</h3>
-      <p>
-        Enterprise-grade HR management system with secure APIs,
-        role-based access control, and optimized SQL Server architecture.
-      </p>
-    </div>
-  </div>
-</section>
 
 <!-- CONTACT -->
-<section class="dark contact" id="contact">
-  <p class="section-label">// CONTACT</p>
-  <h2>Let’s build something meaningful</h2>
+<section class="container contact">
 
-  <div class="contact-grid">
+<h2>Contact</h2>
 
-    <div class="contact-info">
-      <p class="contact-email">mayanksahutms@gmail.com</p>
+<div class="contact-box">
 
-      <div class="contact-links">
-        <a href="https://github.com/tainytomcruise" target="_blank" class="plain-link">GitHub</a>
-        <a href="https://www.linkedin.com/in/mayank-sahu-29a48a244/" target="_blank" class="plain-link">LinkedIn</a>
-      </div>
-    </div>
+<p>Open to Software Engineering and AI-focused opportunities.</p>
 
-    <form class="contact-form" id="contactForm">
-      <input type="text" placeholder="Your name" required />
-      <input type="email" placeholder="Your email" required />
-      <textarea placeholder="Your message" rows="4" required></textarea>
-      <button type="submit">Send message</button>
-    </form>
+<p class="email">📧 mayanksahutms@gmail.com</p>
 
-  </div>
+<div class="contact-links">
+<a href="https://github.com/tainytomcruise" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/mayank-sahu-29a48a244/" target="_blank">LinkedIn</a>
+</div>
+
+</div>
+
 </section>
 
+
+
+<footer>
+Engineered by Mayank Sahu.
+</footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
